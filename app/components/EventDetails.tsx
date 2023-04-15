@@ -36,14 +36,6 @@ export function EventDetails({
 					</li>
 				))}
 			</ul>
-			<a href={link} rel="noreferrer" target="_blank">
-				{linkText}
-				<Arrow
-					className="arrow-out"
-					label="External link indication arrow"
-					rotate={-45}
-				/>
-			</a>
 		</article>
 	);
 }

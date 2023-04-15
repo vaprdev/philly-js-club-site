@@ -24,7 +24,10 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 			</header>
 			<main className="page-grid-left">{left}</main>
 			<footer className="page-grid-footer">
-				<a className="page-grid-footer-link" href="/about">
+				<a
+					className="page-grid-footer-link page-grid-footer-link-internal"
+					href="/about"
+				>
 					About
 				</a>
 				<a
@@ -40,8 +43,10 @@ export function PageGrid({ left, subtitle, title }: PageGridProps) {
 						rotate={-45}
 					/>
 				</a>
-				<span className="page-grid-footer-separator" />
-				<a className="page-grid-footer-link" href="/events">
+				<a
+					className="page-grid-footer-link page-grid-footer-link-internal"
+					href="/events"
+				>
 					Events
 				</a>
 				<a
