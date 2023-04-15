@@ -19,13 +19,16 @@ export function EventDetails({
 }: EventDetailsProps) {
 	const formatter = new Intl.DateTimeFormat("en-US", {
 		day: "numeric",
-		month: "long",
+		month: "short",
 	});
 
 	return (
 		<article className={`event-details medium event-details-${weight}`}>
-			<h3 className="event-details-date">{formatter.format(date)}</h3>
-			<p>{location}</p>
+			<div className="event-details-meta">
+				<h3 className="event-details-date">{formatter.format(date)}</h3>
+				&nbsp;
+				<p className="event-details-location">{location}</p>
+			</div>
 			<ul className="event-details-topics">
 				{topics.map((topic) => (
 					<li className="event-details-topic" key={topic}>
