@@ -18,6 +18,7 @@ Let us know if you think you've found one we'd like. 😏
 .larger {
 	font-size: var(--font-size-larger);
 	font-weight: var(--font-weight-larger);
+	text-transform: uppercase;
 }
 
 .large {
@@ -165,8 +166,8 @@ Let us know if you think you've found one we'd like. 😏
 	}
 
 	.page-grid-header {
-		text-align: right;
 		top: 2rem;
+		padding-left: 1em;
 	}
 
 	.page-grid-footer {
@@ -177,6 +178,8 @@ Let us know if you think you've found one we'd like. 😏
 
 	.page-grid-left {
 		width: calc(50% - 2rem);
+		padding: 1em 1em 0 0;
+		border-right: 4px solid var(--color-foreground);
 	}
 }
 
